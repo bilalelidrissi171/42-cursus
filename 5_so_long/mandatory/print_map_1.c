@@ -53,8 +53,8 @@ void	ft_print_win(char **map)
 	t_map_i_j	map_i_j;
 
 	my_mlx_img.moves = 0;
-	ft_init_images(&my_mlx_img);
 	my_mlx_img.mlx = mlx_init();
+	ft_init_images(&my_mlx_img);
 	if (!my_mlx_img.mlx)
 		ft_exit("Error\nmlx_init Error\n", &my_mlx_img);
 	map_i_j = ft_get_map_i_j(map);
